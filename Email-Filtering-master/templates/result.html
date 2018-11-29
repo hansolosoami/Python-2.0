@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<body>
+		<h1>Email filter </h1>
+		<h2>Spam:{{result[0]}}</h2>
+		<h2>Ham:{{result[1]}}</h2>
+	
+<h2>Spam_List</h2>
+<ul>
+{% for item in spam_list %}
+	<li>{{ item }}</li>
+{% endfor %}
+</ul>
+<h2>Ham_List</h2>
+<ul>
+{% for item in ham_list %}
+	<li>{{ item }}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
